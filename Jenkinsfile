@@ -18,7 +18,7 @@ pipeline {
 
 		stage ('Deploy') {
 			steps {
-				sh 'java-version'
+				sh 'java -version'
 			}
 		}
 	}
