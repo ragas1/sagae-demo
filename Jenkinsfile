@@ -2,10 +2,10 @@
 
 properties([
 	[$class:'GithubProjectProperty',
-	displayName:",
+	displayName:'',
 	projectUrlStr:'https://github.com/smodalasagar/Demo_branch.git/'],
 	pipelineTriggers([upstream('down'),
-	pollSCM(")])])
+	githubPush()])])
 ///uncoment
 
 pipeline {
