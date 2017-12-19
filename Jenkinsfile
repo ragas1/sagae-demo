@@ -1,7 +1,12 @@
 #!groovy
 
-properties([[$class: 'GithubProjectProperty',displayName:",projectUrlStr:'https://github.com/smodalasagar/Demo_branch.git/'],
-pipelineTriggers([upstream('down'),pollSCM(")])])
+properties([
+	[$class:'GithubProjectProperty',
+	displayName:",
+	projectUrlStr:'https://github.com/smodalasagar/Demo_branch.git/'],
+	pipelineTriggers([upstream('down'),
+	pollSCM(")])])
+///uncoment
 
 pipeline {
 	agent any
